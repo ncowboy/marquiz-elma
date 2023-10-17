@@ -89,7 +89,7 @@ function send_request(string $url, string $method, string $token, array $options
     $curl = curl_init();
 
     curl_setopt_array($curl, [
-        CURLOPT_URL => "{$url}/{$method}",
+        CURLOPT_URL => "{$url}{$method}",
         CURLOPT_CUSTOMREQUEST => 'POST',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
